@@ -20,4 +20,5 @@ Route::controller(UserController::class)->group(function(){
     Route::get('userlist','userlist');
 });
 
-Route::post('/messages',[MessageController::class,'messages'])->name('sendmessages');
+Route::post('messages',[MessageController::class,'messages'])->name('sendmessages');
+Route::get('getmessages',[MessageController::class,'getmessages'])->name('getmessages');
